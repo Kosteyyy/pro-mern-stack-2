@@ -6,6 +6,7 @@
 	"rules": {
 		"linebreak-style": ["error", "windows"],
 		"no-console": "off",
+		"import/extensions": [ "error", "always", { "ignorePackages": true } ],
 		"react/prop-types": "off"
 	}
 }
