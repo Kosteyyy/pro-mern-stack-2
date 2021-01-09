@@ -4,11 +4,14 @@
   "description": "Pro MERN Stack UI",
   "main": "index.js",
   "scripts": {
-    "compile": "webpack --mode production",
-    "watch": "webpack --watch",
+    "#start": "UI server. HMR is enabled in dev mode.",
     "start": "nodemon -w uiserver.js -w .env uiserver.js",
+    "#lint": "Runs ESLint on all relevant files",
     "lint": "eslint . --ext js,jsx --ignore-pattern public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "#compile": "Generates JS bundles for production. Use with start.",
+    "compile": "webpack --mode production",
+    "#watch": "Compile, and recompile on any changes.",
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
